@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)file:///D:/ML%20PROJECTS/user.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documen</title>
+</head>
+
+<body>
+
+    <div style="color: black">
+        <form action="{{ url_for('predict')}}"  method="post">
+            <h2>PREDECTIVE ANALYSIS OF APNEA</h2>
+            <h3>BQ</h3>
+            <input id="first" name="BQ" type="number ">
+            <h3>ESS</h3><input id="second" name="ESS" required="required">
+            <h3>BMI</h3><input id="third" name="BMI" required="required">
+            <h3>WEIGHT</h3><input id="fourth" name="Weight" required="required">
+            <h3>HEIGHT</h3><input id="fifth" name="Height" required="required">
+            <h3>HEAD</h3><input id="sixth" name="Head" required="required">
+            <h3>NECK</h3><input id="seventh" name="Neck" required="required">
+            <h3>WAIST</h3><input id="eight" name="Waist" required="required">
+            <h3>BUTTOCK</h3><input id="nineth" name="Buttock" required="required">
+            <h3>AGE</h3><input id="tenth" name="Age" required="required">
+            <h3>GENDER(0-F & 1-M)</h3><input id="eleventh" name="M" required="required">
+
+
+
+            <br><br><button id="sub" type="submit ">Condition Of Apnea</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}</h3><h3>
+    </h3></div>
+
+
+
+
+    <style>
+        body {
+            background-image: linear-gradient(180deg,#00ff97, #00e0ff);
+            background-color: inherit;
+text-align: center;
+
+background-size: 1400px;
+        }
+
+
+
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family:  Georgia;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 3%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 24px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+        #sub:hover {
+            background-color: darkcyan;
+        }
+
+        #first {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            
+        }
+
+        #second {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            
+        }
+
+        #fifth {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+        }
+        #sixth {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+        }
+        #seventh {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+        }
+        #eight {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+        }
+        #fourth {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+        }
+        #nineth {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+        }
+        #tenth {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+        }
+        #eleventh {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+        }
+    </style>
+
+
+
+</body></html>
