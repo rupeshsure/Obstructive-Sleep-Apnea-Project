@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)file:///D:/ML%20PROJECTS/user.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSA_PREDICTION</title>
+</head>
+
+<body>
+
+    <div style="font-family: sans-serif; background-color: ; color: rgb(255, 14, 14);">
+        <form action="{{ url_for('predict')}}"  method="post">
+            <h2 style="font-family: cursive;font-style: italic; background-color: black; color: gold;  display: table;
+            margin: 15px auto 5px auto;
+            padding: 8px;">PREDECTIVE ANALYSIS OF APNEA</h2><br>
+            <label for="BQ">BQ</label>
+            <br><br>
+            <input id="first" name="BQ" type="number" min="0" max="1" required="required" placeholder="integer (0 & 1)">
+            <br><br>
+
+            <label for="ESS">ESS</label>
+            <br><br>
+            <input id="second" name="ESS" type="number" min="0" max="50" required="required" placeholder="integer (12 to 65)">
+            <br><br>
+
+            <label for="BMI">BMI (kg/m2)</label>
+            <br><br>
+            <input id="third" name="BMI" type="number" step="any"  min="12" max="60" required="required" placeholder="float (12 to 65)">
+            <br><br>
+
+            <label for="Weight">WEIGHT (kg)</label>
+            <br><br>
+            <input id="fourth" name="Weight" type="number" min="35" max="160" required="required" placeholder="integer (35 to 160)">
+            <br><br>
+
+            <label for="Height">HEIGHT (cm)</label>
+            <br><br>
+            <input id="fifth" name="Height" type="number" min="92" max="245" required="required" placeholder="integer (92 to 245)">
+            <br><br>
+
+            <label for="Head">HEAD</label>
+            <br><br>
+            <input id="sixth" name="Head" type="number" step="any" min="40" max="70" required="required" placeholder="float (40 to 70)">
+            <br><br>
+
+            <label for="Neck">NECK (cm)</label>
+            <br><br>
+            <input id="seventh" name="Neck" type="number" min="20" max="60" required="required" placeholder="integer (20 to 60)">
+            <br><br>
+
+            <label for="Waist">WAIST (cm)</label>
+            <br><br>
+            <input id="eight" name="Waist" type="number" min="50" max="160" required="required" placeholder="integer (50 to 160)">
+            <br><br>
+
+            <label for="Buttock">BUTTOCK (cm)</label>
+            <br><br>
+            <input id="nineth" name="Buttock" type="number" min="60" max="160" required="required" placeholder="integer (60 to 160)">
+            <br><br>
+
+            <label for="Age">AGE</label>
+            <br><br>
+            <input id="tenth" name="Age" type="number" min="20" max="80" required="required" placeholder="integer (20 to 80)">
+            <br><br>
+
+            <label for="M">GENDER (Male-1;Female-0)</label>
+            <br><br>
+            <input id="eleventh" name="M" type="number" min="0" max="1" required="required" placeholder="integer (0 & 1)">
+            <br><br>
+            
+
+
+            <br><br><button id="sub" type="submit ">SUBMIT</button>
+            <br>
+
+
+
+
+        </form>
+    </div>
+    <style>
+        body {
+             background:white url(//www.html.am/images/backgrounds/background-image-2.gif) repeat fixed; 
+            text-align: center;
+            background-size: 1400px;
+        }
+        div {
+  margin-bottom: 10px;
+}
+
+input:invalid+span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  content: '✓';
+  padding-left: 5px;
+}
+label{
+    font-weight: bold;
+}
+
+
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family:  cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 3%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 24px;
+        }
+
+
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            font-family: cursive;
+            font-weight: bolder;
+            border : solid 3px rgb(0, 0, 0);
+            
+        }
+
+        #sub:hover {
+            background-color: rgb(0, 255, 42);
+
+        }
+
+        #first {
+            width: 248px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            font-family: cursive;
+            border : solid 3px rgb(0, 0, 0);
+
+            
+        }
+
+        #second {
+            width: 248px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            text-align: center;
+            font-family: cursive;
+            border : solid 3px rgb(0, 0, 0);
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            text-align: center;
+            font-family: cursive;
+            border : solid 3px rgb(0, 0, 0);
+        }
+
+        #fifth {
+            width: 248px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            text-align: center;
+            font-family: cursive;
+            border : solid 3px rgb(0, 0, 0);
+        }
+        #sixth {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            text-align: center;
+            font-family: cursive;
+            border : solid 3px rgb(0, 0, 0);
+        }
+        #seventh {
+            width: 248px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            text-align: center;
+            font-family: cursive;
+            border : solid 3px rgb(0, 0, 0);
+        }
+        #eight {
+            width: 248px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            text-align: center;
+            font-family: cursive;
+            border : solid 3px rgb(0, 0, 0);
+        }
+        #fourth {
+            width: 248px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            text-align: center;
+            font-family: cursive;
+            border : solid 3px rgb(0, 0, 0);
+        }
+        #nineth {
+            width: 248px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            text-align: center;
+            font-family: cursive;
+            border : solid 3px rgb(0, 0, 0);
+        }
+        #tenth {
+            width: 248px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            text-align: center;
+            font-family: cursive;
+            border : solid 3px rgb(0, 0, 0);
+        }
+        #eleventh {
+            width: 248px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            text-align: center;
+            font-family: cursive;
+            border : solid 3px rgb(0, 0, 0);
+        }
+    </style>
+
+
+
+     </html>
+</body>
