@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)file:///D:/ML%20PROJECTS/user.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSA_PREDICTION</title>
+</head>
+
+<body>
+
+    <div style="color: black">
+        <form action="{{ url_for('predict')}}"  method="post">
+            <h2>PREDECTIVE ANALYSIS OF APNEA</h2>
+            <label for="BQ">BQ</label>
+            <br><br>
+            <input id="first" name="BQ" type="number" min="0" max="1" required="required" placeholder="Range(0-1)">
+            <br><br>
+
+            <label for="ESS">ESS</label>
+            <br><br>
+            <input id="second" name="ESS" type="number" min="0" max="50" required="required">
+            <br><br>
+
+            <label for="BMI">BMI</label>
+            <br><br>
+            <input id="third" name="BMI" type="number" step="any"  min="12" max="60" required="required" placeholder="Range(12-65)">
+            <br><br>
+
+            <label for="Weight">WEIGHT</label>
+            <br><br>
+            <input id="fourth" name="Weight" type="number" min="35" max="160" required="required">
+            <br><br>
+
+            <label for="Height">HEIGHT</label>
+            <br><br>
+            <input id="fifth" name="Height" type="number" min="92" max="245" required="required">
+            <br><br>
+
+            <label for="Head">HEAD</label>
+            <br><br>
+            <input id="sixth" name="Head" type="number" step="any" min="40" max="70" required="required">
+            <br><br>
+
+            <label for="Neck">NECK</label>
+            <br><br>
+            <input id="seventh" name="Neck" type="number" min="20" max="60" required="required">
+            <br><br>
+
+            <label for="Waist">WAIST</label>
+            <br><br>
+            <input id="eight" name="Waist" type="number" min="50" max="160" required="required">
+            <br><br>
+
+            <label for="Buttock">BUTTOCK</label>
+            <br><br>
+            <input id="nineth" name="Buttock" type="number" min="60" max="160" required="required">
+            <br><br>
+
+            <label for="Age">AGE</label>
+            <br><br>
+            <input id="tenth" name="Age" type="number" min="20" max="80" required="required">
+            <br><br>
+
+            <label for="M">GENDER</label>
+            <br><br>
+            <input id="eleventh" name="M" type="number" min="0" max="1" required="required">
+            <br><br>
+            
+
+
+            <br><br><button id="sub" type="submit ">Condition Of Apnea</button>
+            <br>
+
+
+
+
+        </form>
+    </div>
+    <style>
+        body {
+            background-image: linear-gradient(180deg,#00ff97, #00e0ff);
+            background-color: inherit;
+text-align: center;
+
+background-size: 1400px;
+        }
+        div {
+  margin-bottom: 10px;
+}
+
+input:invalid+span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  content: '✓';
+  padding-left: 5px;
+}
+label{
+    font-weight: bold;
+}
+
+
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family:  Georgia;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 3%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 24px;
+        }
+
+
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+        #sub:hover {
+            background-color: rgb(255, 255, 255);
+        }
+
+        #first {
+            width: 210px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            border : solid 4px rgb(0, 0, 0);
+
+            
+        }
+
+        #second {
+            width: 210px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            border : solid 4px rgb(0, 0, 0);
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            border : solid 4px rgb(0, 0, 0);
+        }
+
+        #fifth {
+            width: 210px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            border : solid 4px rgb(0, 0, 0);
+        }
+        #sixth {
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            border : solid 4px rgb(0, 0, 0);
+        }
+        #seventh {
+            width: 210px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            border : solid 4px rgb(0, 0, 0);
+        }
+        #eight {
+            width: 210px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            border : solid 4px rgb(0, 0, 0);
+        }
+        #fourth {
+            width: 210px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            border : solid 4px rgb(0, 0, 0);
+        }
+        #nineth {
+            width: 210px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            border : solid 4px rgb(0, 0, 0);
+        }
+        #tenth {
+            width: 210px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            border : solid 4px rgb(0, 0, 0);
+        }
+        #eleventh {
+            width: 210px;
+            border-radius: 14px;
+            height: 20px;
+            font-size: 17px;
+            text-align: center;
+            border : solid 4px rgb(0, 0, 0);
+        }
+    </style>
+
+
+
+     </html>
+</body>
