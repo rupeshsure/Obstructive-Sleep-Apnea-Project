@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)file:///D:/ML%20PROJECTS/user.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSA_PREDICTION</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+            <section>
+            <h3 style="text-align: 10px;color: chartreuse;">RUPESH</h3>   
+            </section>
+           
+    </div>
+        </div>
+        
+</body>
+<style>
+
+body {
+            min-height: 100vh;
+            background: #0c192c;
+            text-align: 10px;
+            
+        }
+     section {
+        background: black;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+    }
+        .container{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;   
+        } 
+        .bubbles{
+            position: relative;
+            display: flex;
+        }  
+        .bubbles span{
+            width: 30px;
+            height: 30px;
+            background: #4fc3dc;
+            margin: 0 4px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px #4fc3dc44,
+            0 0 50px #4fc3dc, 0 0 100px #4fc3dc; 
+            animation: animate 15s linear infinite;  
+            animation-duration: calc(10s / var(--i)); 
+            animation-duration: calc(125s / var(--i)); 
+        }
+        .bubbles span:nth-child(even)
+        {
+            background: #ff3d75 ;
+            box-shadow: 0 0 0 10px #4fc3dc44 ,
+            0 0 50px #ff2d75, 0 0 100px #ff2d75;
+
+        }
+        @keyframes animate{
+            0%
+            {
+                transform: translateY(100vh) scale(0);
+            }
+            100%
+            {
+                transform: translateY(-10vh) scale(1);
+            }
+       
+        }
+
+</style>
+</html>
