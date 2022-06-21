@@ -1,3 +1,4 @@
+# ALL THE REQURIED FILES WHICH ARE USED TO CARRY OUT THIS PROJECT WERE ATTACHED IN THE REPOSITORY. USER INTERFACE FILES, CODING PART, RESULTS, DATA SETS, AND PPT in which all the detalis and overview of the project has been discussed.
 # ABSTRACT
 Obstructive Sleep Apnea (OSA) is a rather prevalent condition. Adult men are affected by
 OSA at a rate of 14%, whereas adult women are affected at a rate of 5%. Due to upper airway
