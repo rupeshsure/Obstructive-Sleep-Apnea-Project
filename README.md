@@ -10,4 +10,7 @@ supervised machine learning classifier approaches were implemented to evaluate t
 case of a balanced data set, the Random Forest classifier performed well, with the top result being
 91% accuracy. A User Interface (UI) has been created for classifying OSA condition of a person by
 supplying all medical factors to the UI as a numerical input.
+ # OSA VS NORMAL SLEEPING
+ ![OSA](https://user-images.githubusercontent.com/92075957/174732667-f001a2dc-837e-4a48-90ff-f4921fb8d039.jpg)
 
+ 
