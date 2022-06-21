@@ -29,5 +29,20 @@ certain range (decimal values) to overcome this labeling has been done based on 
 ![ahi](https://user-images.githubusercontent.com/92075957/174733492-2c15c7d6-f529-4a78-8242-216702bf9ce9.PNG)
 # TRAIN SPLIT VS TEST SPLIT
 ![split](https://user-images.githubusercontent.com/92075957/174733616-a5f140ff-7ec2-4124-b9b0-a6be6b04268a.PNG)
+# USER INTERFACE
+![USER](https://user-images.githubusercontent.com/92075957/174736397-24991d34-1536-41e1-8bd5-90becd7290b6.png)
+# RESULTS
+# Case - 1 
+The case - 1 states the person is in normal condition and AHI value will be less than 5
+![AHI0](https://user-images.githubusercontent.com/92075957/174736507-c9c72a5b-35ea-463c-9df0-d197e96051c2.png)
+# Case - 2
+The case - 2 states the person is in mild condition and AHI value will be between 5 to 15
+![AHI1](https://user-images.githubusercontent.com/92075957/174736550-9b324238-2aaa-46cc-aac9-0986b2a5099f.png)
+#  Case - 3
+The case - 3 states the person is in moderate condition and AHI value will be between 15 to 30
+![AHI2](https://user-images.githubusercontent.com/92075957/174736614-222a5765-3ef1-4064-86fd-888d571c0501.png)
+# Case - 4
+The case - 4 states the person is in serious condition and AHI value will be greater than 30
+![AHI3](https://user-images.githubusercontent.com/92075957/174736654-0197f5a1-21e7-4b17-abb1-b8a4b339855a.png)
 
 
