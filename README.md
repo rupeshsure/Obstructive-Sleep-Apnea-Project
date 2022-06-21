@@ -21,3 +21,13 @@ further used a technique for predicting the model with the help of Synthetic Min
 Technique (SMOTE) which help to convert imbalanced data set to balanced data set. Based on these
 approaches we are going to conclude that which algorithm is best algorithm and which provides the
 best result for the model. A UI page has been created to test the model prediction
+# BLOCK DIAGRAM
+![Block Digarm](https://user-images.githubusercontent.com/92075957/174733034-24227b8a-dce5-490d-a6b4-a2b01ae87cab.PNG)
+# AHI Value Labeling
+ML does not give proper results in predicting the severity of OSA if the OSA value is in a
+certain range (decimal values) to overcome this labeling has been done based on the severity level. The following table indicates the labeling of the OSA severity.
+![ahi](https://user-images.githubusercontent.com/92075957/174733492-2c15c7d6-f529-4a78-8242-216702bf9ce9.PNG)
+# TRAIN SPLIT VS TEST SPLIT
+![split](https://user-images.githubusercontent.com/92075957/174733616-a5f140ff-7ec2-4124-b9b0-a6be6b04268a.PNG)
+
+
