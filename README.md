@@ -1,4 +1,5 @@
 # ALL THE REQURIED FILES WHICH ARE USED TO CARRY OUT THIS PROJECT WERE ATTACHED IN THE REPOSITORY. USER INTERFACE FILES, CODING PART, RESULTS, DATA SETS, AND PPT in which all the detalis and overview of the project has been discussed. The UI has been build with the help flask server. The UI has been deployed in heroku platform.
+# App Link : https://osaprediction.herokuapp.com/
 # ABSTRACT
 Obstructive Sleep Apnea (OSA) is a rather prevalent condition. Adult men are affected by
 OSA at a rate of 14%, whereas adult women are affected at a rate of 5%. Due to upper airway
