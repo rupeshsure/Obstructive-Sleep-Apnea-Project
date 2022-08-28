@@ -47,5 +47,5 @@ The case - 4 states the person is in serious condition and AHI value will be gre
 ![AHI3](https://user-images.githubusercontent.com/92075957/174736654-0197f5a1-21e7-4b17-abb1-b8a4b339855a.png)
 # OR CODE TO ACCESS THE WEB APPLICATION
 ![June17-102741AM](https://user-images.githubusercontent.com/92075957/174826765-2fb0d0e2-5c84-48cf-be61-9ab96733c29e.png)
-
+App Link : https://osaprediction.herokuapp.com/
 
